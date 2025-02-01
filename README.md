@@ -84,3 +84,6 @@ I observed that using either DROP or REJECT we will get a filtered state with `n
 Dropped logs:
 
 ![Screenshot 2025-02-02 014640](https://github.com/user-attachments/assets/4a483b35-025c-47d7-9c6b-6bcae618c792)
+
+
+## 3. Enabling IP Forwarding
