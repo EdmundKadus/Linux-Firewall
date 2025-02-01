@@ -1,6 +1,7 @@
 
 
 # Objectives
+Implementing port & IP based packet filtering with iptables/nftables.
 
 ## 1. Basic Firewall Configuration
 
