@@ -34,7 +34,7 @@ The `-N` option adds a new chain to the pre-existing chains (`INPUT`, `OUTPUT`, 
   ~~~~
   iptables -X custom-chain
   ~~~~
-
+ What's the difference between `-D` & `-X` ? The former deletes chain rules, latter removes the chain itself. All rules must be cleared before `-X` can be used.
     
 
 ## 2. Filtering traffic by IP Address and TCP Ports
