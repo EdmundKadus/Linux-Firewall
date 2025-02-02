@@ -25,14 +25,14 @@ The `-N` option adds a new chain to the pre-existing chains (`INPUT`, `OUTPUT`, 
 
 ### Deleting custom chains
 
-  To remove a custom chain, first, delete the rule referencing it. If CHAIN DEL fails, it means some related rules are still present and must be removed before the chain can be deleted. 
+  To remove a custom chain, first, delete the rule referencing it. If CHAIN DEL fails, it means some related rules are still present and must be removed before the chain can be deleted. We can view them by doing `iptables -S`
   ~~~~
-  iptables -S
+  iptables -D INPUT -p icmp -j custom-chain
   ~~~~
 
   Once all references are removed, delete the chain itself:
   ~~~~
-  iptables -D INPUT -p icmp -j custom-chain
+  iptables -D custom-chain
   ~~~~
 
     
