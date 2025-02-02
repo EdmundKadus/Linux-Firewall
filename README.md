@@ -32,7 +32,7 @@ The `-N` option adds a new chain to the pre-existing chains (`INPUT`, `OUTPUT`, 
 
   Once all references are removed, delete the chain itself:
   ~~~~
-  iptables -D custom-chain
+  iptables -X custom-chain
   ~~~~
 
     
