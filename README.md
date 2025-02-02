@@ -40,7 +40,10 @@ The `-N` option adds a new chain to the pre-existing chains (`INPUT`, `OUTPUT`, 
 ## 2. Filtering traffic by IP Address and TCP Ports
 
 ### Rejecting all ICMP to 127.0.0.1
-  Like most standard firewall we are able to state both source and destination IP addresses along with the ports that are allowed for the input chain.
+  Like most standard firewall we are able to state both source and destination IP addresses along with the ports that are allowed for the input chain. The options include:
+  Source = `-s`
+  Destination = `-d`
+  Protocols = `-p`
   ~~~~
   iptables -D INPUT -p icmp -s 127.0.0.1 REJECT
   ~~~~
