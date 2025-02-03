@@ -91,6 +91,9 @@ Dropped logs:
 
 Having a filtered state gives our attackers an idea that ports are hidden behind firewalls. We can make this information more ambiguous by adding a rule to make the firewall reject TCP ACK requests with a reset packet.
 
+![cPzF0kU](https://github.com/user-attachments/assets/f3a904ef-f0e9-4a26-9ed4-cdc4e88faeac)
+
+
 Before:
   ~~~~
   iptables -I INPUT -p tcp --dport 80 -j REJECT --reject-with tcp-reset
