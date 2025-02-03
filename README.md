@@ -96,7 +96,7 @@ Before:
   iptables -I INPUT -p tcp --dport 80 -j REJECT --reject-with tcp-reset
   ~~~~
 
-The attackers gets back a "closed" port state
+The attackers gets back a closed port state instead of filtered.
 
 ![image](https://github.com/user-attachments/assets/bf923258-37c1-4ed1-9b28-992637af55d6)
 
