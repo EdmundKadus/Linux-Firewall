@@ -94,7 +94,7 @@ Having a filtered state gives our attackers an idea that ports are hidden behind
 ![cPzF0kU](https://github.com/user-attachments/assets/f3a904ef-f0e9-4a26-9ed4-cdc4e88faeac)
 
 
-Before:
+Spoofing with a reset packet:
   ~~~~
   iptables -I INPUT -p tcp --dport 80 -j REJECT --reject-with tcp-reset
   ~~~~
