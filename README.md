@@ -1,7 +1,7 @@
 
 
 # Objectives
-Implementing port & IP based packet filtering with iptables/nftables.
+Implementing port & IP based packet filtering with iptables/nftables, too this opportunity to learn more on linux's netfilter and general networking.
 
 ## 1. Basic Firewall Configuration
 
